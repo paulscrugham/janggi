@@ -12,6 +12,10 @@ The Python program has no dependencies, so all that is needed to run the game is
 
 At least Python 3.6 is needed to run the game.
 
+## Playing JanggiGame
+
+Once the program is running, the game will prompt each player to enter their move as from and to positions. If the move is valid, the piece will be moved and it becomes the next player's turn.
+
 ## Features
 
 This program simulates the board game Janggi (or Korean chess) and allows players to take turns moving their respective pieces until checkmate. 
