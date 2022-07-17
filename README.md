@@ -16,6 +16,8 @@ At least Python 3.6 is needed to run the game.
 
 Once the program is running, the game will prompt each player to enter their move as from and to positions. If the move is valid, the piece will be moved and it becomes the next player's turn.
 
+The game will print a message at each turn if a player is in check. If a player is in checkmate, the game will print which player won and quit the program.
+
 ## Features
 
 This program simulates the board game Janggi (or Korean chess) and allows players to take turns moving their respective pieces until checkmate. 
