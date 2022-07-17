@@ -2,6 +2,8 @@
 
 A command line, local vs local Python implementation of [Janggi](https://en.wikipedia.org/wiki/Janggi), also known as Korean chess.
 
+![Board](/README/board.png)
+
 ## Running JanggiGame
 
 The Python program has no dependencies, so all that is needed to run the game is a single command line entry:
