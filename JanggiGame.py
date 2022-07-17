@@ -882,9 +882,9 @@ class JanggiGame:
     def display_board(self):
         """Prints the board and current piece locations to the console"""
         if self._turn == 'red':
-            turn = 'Blue'
-        else:
             turn = 'Red'
+        else:
+            turn = 'Blue'
 
         print()
         print("Move " + str(self._current_move) + " - " + turn)
@@ -919,32 +919,26 @@ class JanggiGame:
 
 def main():
     game = JanggiGame()
-    game.make_move('g7', 'h7')
-    game.display_board()
-    game.make_move('a4', 'a5')
-    game.display_board()
-    game.make_move('h8', 'h6')
-    game.display_board()
-    game.make_move('a5', 'a6')
-    game.display_board()
-    game.make_move('e7', 'f7')
-    game.display_board()
-    game.make_move('a6', 'a7')
-    game.display_board()
-    game.make_move('f7', 'f6')
-    game.display_board()
-    game.make_move('a7', 'b7')
-    game.display_board()
-    game.make_move('h6', 'e6')
-    game.display_board()
-    print(game.make_move('e2', 'd2'))
-    game.display_board()
-    print('Blue is in check: ' + str(game.is_in_check('blue')))
-    print('Red is in check: ' + str(game.is_in_check('red')))
-    print(game.get_game_state())
+    
+    player_input = ''
 
-    # game.get_positions()['d3'].find_moves(game.get_positions(), game.get_palaces())
-    # print(game.get_positions()['d3'].get_possible_moves())
+    while player_input != 'exit':
+        game.display_board()
+        state = game.get_game_state()
+        if state == 'UNFINISHED':
+            if game.is_in_check('red'):
+                print('Red player is in check')
+            if game.is_in_check('blue'):
+                print('Blue player is in check')
+            first_move = input('Enter a position to move from: ')
+            second_move = input('Enter a position to move to: ')
+            game.make_move(first_move, second_move)
+        else:
+            print(state)
+            break
+
+
+    print('The game is now exiting')
 
 
 if __name__ == '__main__':
