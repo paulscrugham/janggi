@@ -1,6 +1,14 @@
-# Janggi
+# JanggiGame
 
 A command line, local vs local Python implementation of [Janggi](https://en.wikipedia.org/wiki/Janggi), also known as Korean chess.
+
+## Running JanggiGame
+
+The Python program has no dependencies, so all that is needed to run the game is a single command line entry:
+
+`python JanggiGame.py` or `python3 JanggiGame.py`
+
+At least Python 3.6 is needed to run the game.
 
 ## Features
 
@@ -11,3 +19,9 @@ The program consists of Piece, sub-Piece, and JanggiGame classes with methods fo
 The game will not allow a player to make a move if it is not their turn, if a move is not valid (breaks rules for movement of the piece), if a move would put the current player in check, or if a player is in checkmate.
 
 Once a player is in checkmate, the game_state will be updated to reflect which player won.
+
+## Testing JanggiGame
+
+Included in this repo is a `JanggiGame_tests.py` file that contains tests ranging from a few moves to full game runs that end in checkmate. It can be run with the following command (assuming `JanggiGame.py` is in the same directory:
+
+`python JanggiGame_tests.py` or `python3 JanggiGame_tests.py`
