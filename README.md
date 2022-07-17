@@ -22,6 +22,6 @@ Once a player is in checkmate, the game_state will be updated to reflect which p
 
 ## Testing JanggiGame
 
-Included in this repo is a `JanggiGame_tests.py` file that contains tests ranging from a few moves to full game runs that end in checkmate. It can be run with the following command (assuming `JanggiGame.py` is in the same directory:
+Included in this repo is a `JanggiGame_tests.py` file that contains tests ranging from a few moves to full game runs that end in checkmate. It can be run with the following command (assuming `JanggiGame.py` is in the same directory):
 
 `python JanggiGame_tests.py` or `python3 JanggiGame_tests.py`
